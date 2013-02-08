@@ -14,5 +14,21 @@ files ie screen.css, and browsers to use long cache time for the file screen.css
 This means that as soon as new assets (CSS, Javascript) content is pushed to the web
 server the user will see the updates.
 
+Try it out
+--
+
+Assuming you have ruby installed ;
+
+TODO - Add info on how to clone this repo
+
+    gem install bundler #If you do not have bunlder
+    bundle install 
+
+    rackup
+
+    ## Now visit 127.0.0.1:9292
+
+
+
 [sinatra-assetpack]: http://ricostacruz.com/sinatra-assetpack
 [sinatra]: http://www.sinatrarb.com/ 
