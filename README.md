@@ -19,11 +19,15 @@ Try it out
 
 Assuming you have ruby installed ;
 
-TODO - Add info on how to clone this repo
+    #Download App
+    git clone git@github.com:morganp/sinatra_assetpack_demo.git
+    cd sinatra_assetpack_demo
 
+    #Setup
     gem install bundler #If you do not have bunlder
     bundle install 
 
+    #Run
     rackup
 
     ## Now visit 127.0.0.1:9292
