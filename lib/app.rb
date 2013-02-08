@@ -17,14 +17,14 @@ module AssetpackDemo
     register Sinatra::AssetPack
 
     # Development mode 
-    #<link rel='stylesheet' href='/css/screen_layout.css' media='screen' />
-    #<link rel='stylesheet' href='/css/screen_colors.css' media='screen' />
+    #<link rel='stylesheet' href='/css/screen_layout.unique_id.css' media='screen' />
+    #<link rel='stylesheet' href='/css/screen_colors.unique_id.css' media='screen' />
 
     # Production mode 
-    #<link rel='stylesheet' href='/css/screens.css' media='screen' />
-    puts "#{root}/css"
+    #<link rel='stylesheet' href='/css/screens.unique_id.css' media='screen' />
+
     assets {
-      serve '/css',    from: "#{root}/css"       # Optional
+      serve '/css',    from: "assets/css" # lib/assets/css
       css :screen, '/css/screen.css', [
         '/css/screen_layout.css',
         '/css/screen_colors.css'
